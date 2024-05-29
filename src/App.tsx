@@ -13,7 +13,7 @@ export const App = () => {
   return (
     <HelmetProvider>
       <ThemeProvider storageKey="pizzashop-theme" defaultTheme="dark">
-        <Helmet titleTemplate="%s | pizza.shop" />
+        <Helmet titleTemplate="%s | pizza.dash" />
         <Toaster richColors position="top-right" />
         <QueryClientProvider client={QueryClient}>
           <RouterProvider router={router} />
