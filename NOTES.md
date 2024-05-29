@@ -1,5 +1,10 @@
-- Este projeto utiliza o `pnpm` para suas dependências
-- Este projeto está sendo realizado com a versão `v20.11.0` do node
-- Este projeto está sendo realizado com Vite
-- Este projeto está utilizando a biblioteca `sonner` para seus toasts
-- Este projeto está utilizando o `shadcn/ui`, `eslint`, `prettier`, `react-router-dom` e o `react-helmet-async`
+- This project uses `pnpm` for libraries;
+- This project uses `v20.11.0` from node;
+- This project uses Vite;
+- This project uses `sonner` as toast library;
+- This project uses `shadcn/ui`, `eslint`, `prettier`, `react-router-dom` and `react-helmet-async`
+- This project uses context to deal with themes;
+
+# TO DO
+
+- Add Jotai instead context on theme provider
