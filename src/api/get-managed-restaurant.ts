@@ -1,6 +1,6 @@
 import { APIClient } from '@/lib/axios'
 
-interface GetManagerRestaurantResponse {
+interface GetManagedRestaurantResponse {
   id: string
   name: string
   createdAt: Date | null
@@ -9,8 +9,8 @@ interface GetManagerRestaurantResponse {
   managerId: string | null
 }
 
-export const getManagerRestaurant = async () => {
-  const response = await APIClient.get<GetManagerRestaurantResponse>(
+export const getManagedRestaurant = async () => {
+  const response = await APIClient.get<GetManagedRestaurantResponse>(
     '/managed-restaurant',
   )
 

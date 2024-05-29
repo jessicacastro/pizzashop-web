@@ -1,6 +1,9 @@
 import { DialogTrigger } from '@radix-ui/react-dialog'
 import { Building, ChevronDown, LogOut } from 'lucide-react'
 
+import { getManagedRestaurant } from '@/api/get-managed-restaurant'
+import { getProfile } from '@/api/get-profile'
+
 import { StoreProfileDialog } from './store-profile-dialog'
 import { Button } from './ui/button'
 import { Dialog } from './ui/dialog'
@@ -19,10 +22,11 @@ export const AccountMenu = () => {
     queryKey: ['profile'],
     queryFn: getProfile,
   })
+
   const { data: managedRestaurant, isLoading: isLoadingManagedRestaurant } =
     useQuery({
       queryKey: ['managed-restaurant'],
-      queryFn: getManagerRestaurant,
+      queryFn: getManagedRestaurant,
     })
 
   return (
