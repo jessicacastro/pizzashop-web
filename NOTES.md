@@ -1,0 +1,5 @@
+- Este projeto utiliza o `pnpm` para suas dependências
+- Este projeto está sendo realizado com a versão `v20.11.0` do node
+- Este projeto está sendo realizado com Vite
+- Este projeto está utilizando a biblioteca `sonner` para seus toasts
+- Este projeto está utilizando o `shadcn/ui`, `eslint`, `prettier`, `react-router-dom` e o `react-helmet-async`
