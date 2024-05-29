@@ -14,6 +14,15 @@ import {
 } from './ui/dropdown-menu'
 
 export const AccountMenu = () => {
+  const { data: profile } = useQuery({
+    queryKey: ['profile'],
+    queryFn: getProfile,
+  })
+  const { data: managedRestaurant } = useQuery({
+    queryKey: ['managed-restaurant'],
+    queryFn: getManagerRestaurant,
+  })
+
   return (
     <Dialog>
       <DropdownMenu>
